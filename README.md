@@ -6,14 +6,14 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/demo-Streamlit-FF4B4B.svg)](https://streamlit.io/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: Non-Commercial](https://img.shields.io/badge/license-Non--Commercial%20Research-blue.svg)](LICENSE)
 [![Zero-shot](https://img.shields.io/badge/zero--shot-no%20fine--tuning-orange.svg)]()
 
 ---
 
 ## Overview
 
-This repository contains **ARIA** (AI Risk & Incident Analyzer) — a VLM-based reasoning layer for industrial safety monitoring, built as Stage 2 on top of an existing YOLO+DeepSORT detection system deployed at the SDI Butler steel plant.
+This repository contains **ARIA** (AI Risk & Incident Analyzer) — a VLM-based reasoning layer for industrial safety monitoring, designed as Stage 2 on top of a YOLO+DeepSORT detection system developed for industrial steel plant environments.
 
 The core research question:
 
@@ -37,7 +37,7 @@ Same model. Same frame. Same zero-shot setup.
 ## System Architecture
 
 ```
-Stage 1 (existing, deployed at SDI plant):
+Stage 1 (YOLO + DeepSORT detection system):
   Camera feed → YOLO + DeepSORT
   Detects: vehicles, personnel, zone violations
   Output: bounding boxes + zone alerts
@@ -330,7 +330,7 @@ If you use this work, please cite:
              Vision Language Models and Prompt Engineering},
   author  = {CIVS, Purdue University Northwest},
   year    = {2025},
-  note    = {Demonstrated at SDI Butler Steel Plant.
+  note    = {Research conducted using SDI Butler steel plant footage.
              \url{https://github.com/<your-username>/vlm-industrial-safety}}
 }
 ```
@@ -339,11 +339,11 @@ If you use this work, please cite:
 
 ## Acknowledgements
 
-- **SDI (Steel Dynamics Inc.)** — for providing plant access and CCTV footage
+- **SDI (Steel Dynamics Inc.)** — for providing CCTV footage used in this research
 - **CIVS (Center for Innovation through Visualization and Simulation)** at Purdue University Northwest — for research support and infrastructure
 - **Google** — Gemma 3 27B model weights (via HuggingFace)
 - **vLLM** — high-throughput local VLM inference server
-- The existing YOLO + DeepSORT system (Stage 1) was built by the CIVS team
+- The YOLO + DeepSORT detection system (Stage 1) was developed by the CIVS team
 
 ---
 
