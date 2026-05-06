@@ -71,19 +71,6 @@ Three phases, one research arc:
 | `cot` | Chain-of-thought, step-by-step reasoning |
 | `multi_q` | Multi-question chain, structured Q&A |
 
-**Results from 1,044 completed inferences (Gemma 3 27B, zero-shot):**
-
-| Phase | Variant | n | Detection Rate |
-|-------|---------|---|----------------|
-| Phase 1 | direct | 240 | 100.0% |
-| Phase 1 | domain | 240 | 90.4% |
-| Phase 1 | cot | 240 | 80.0% |
-| Phase 1 | multi_q | 240 | 88.8% |
-| Phase 2 | direct | 21 | 100.0% ← all YES, but **wrong reasons** |
-| Phase 2 | domain | 21 | 100.0% ← YES, with **correct plant reasoning** |
-| Phase 2 | cot | 21 | 100.0% |
-| Phase 2 | multi_q | 21 | 66.7% |
-
 ---
 
 ## Repository Structure
@@ -328,7 +315,7 @@ If you use this work, please cite:
 @misc{aria-vlm-hazard-2025,
   title   = {Bridging the Domain Gap in Industrial Safety with
              Vision Language Models and Prompt Engineering},
-  author  = {CIVS, Purdue University Northwest},
+  author  = {Polra, Jay and CIVS, Purdue University Northwest},
   year    = {2025},
   note    = {Research conducted using SDI Butler steel plant footage.
              \url{https://github.com/<your-username>/vlm-industrial-safety}}
