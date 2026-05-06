@@ -1,0 +1,39 @@
+# ── ARIA VLM Hazard Recognition ─────────────────────────────────────────────
+# Install: pip install -r requirements.txt
+#
+# External dependencies (install manually if using local Gemma via vLLM):
+#   conda create -n gemmaenv python=3.11
+#   pip install vllm==0.8.4          # or latest compatible with your GPU
+#   # Accept model license at: https://huggingface.co/google/gemma-3-27b-it
+#   huggingface-cli login
+#   vllm serve google/gemma-3-27b-it --port 8000
+
+# ── Demo app (Streamlit + visualization) ────────────────────────────────────
+streamlit>=1.28.0
+pandas>=2.0.0
+plotly>=5.18.0
+pillow>=10.0.0
+
+# ── VLM backends ─────────────────────────────────────────────────────────────
+# Gemini (Google API)
+google-genai>=1.0.0
+
+# GPT-4o (OpenAI API) + vLLM client (same package)
+openai>=1.0.0
+
+# ── Dataset preparation pipeline ─────────────────────────────────────────────
+yt-dlp>=2024.1.0
+opencv-python>=4.8.0
+tqdm>=4.66.0
+
+# ── Results analysis ─────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Optional: local Gemma/LLaVA via HuggingFace transformers ────────────────
+# Uncomment if using --model gemma4 or --model llava with transformers backend:
+# transformers>=4.45.0
+# torch>=2.1.0
+# accelerate>=0.25.0
+# safetensors>=0.4.0
+# huggingface-hub>=0.20.0

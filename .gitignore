@@ -1,0 +1,65 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Model checkpoints
+*.pth
+*.ckpt
+*.pt
+*.safetensors
+work_dirs/
+checkpoints/
+
+# Result and output files
+*.pkl
+outputs/
+results/
+av_results/
+
+# Training / experiment logs
+logs/
+events.out.*
+runs/
+wandb/
+
+# Raw dataset files and video footage
+data/
+datasets/
+frames/
+your_mkv_files/
+*.mp4
+*.mkv
+*.avi
+
+# Demo clips and hero frames (SDI footage is private)
+vlm_demo/clips/
+vlm_demo/hero_frames/
+
+# Pipeline runtime files
+experiment_queue.csv
+frames_index.csv
+master_metadata.csv
+
+# Virtual environments
+.venv/
+venv/
+*.egg-info/
+
+# IDE configs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Credentials and secrets
+.env
+*.env
+secrets.py
+config_local.py
+youtube_cookies.txt
+api_keys.py
+
+
